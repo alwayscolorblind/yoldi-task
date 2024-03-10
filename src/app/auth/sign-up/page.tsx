@@ -36,6 +36,7 @@ export default function LoginPage() {
             onChange={changeHandler(dispatch, ActionType.SET_EMAIL)}
             isError={formState.isError}
             autoComplete="off"
+            type="email"
           />
           <Input
             placeholder="Пароль"

@@ -24,6 +24,7 @@ export default function LoginPage() {
           <Input
             placeholder="E-mail"
             name="email"
+            type="email"
             leftIcon={<EnvelopeIcon className={styles.icon}/>}
             value={state.email}
             onChange={changeHandler(dispatch, ActionType.SET_EMAIL)}
