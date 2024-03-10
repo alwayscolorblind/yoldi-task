@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttonElement {
+    flex: 50%;
+}
+
+.title {
+    font-size: var(--title);
+    line-height: 140%;
+    font-weight: 500;
+    color: var(--txt-color);
+}

@@ -1,0 +1,44 @@
+.label {
+    font-size: var(--button-text);
+    line-height: 140%;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.textAreaContainer {
+    position: relative;
+    flex: 1;
+}
+
+.textAreaContainer > textarea {
+    width: 100%;
+    font-size: var(--paragraph);
+    line-height: 160%;
+    padding: 12px 20px 12px 20px;
+    border: 1px solid var(--strokes-primary);
+    border-radius: var(--border-radius);
+    color: var(--txt-color);
+    background-color: var(--background-primary);
+    font-family: inherit;
+    resize: none;
+}
+
+.textAreaContainer > textarea::placeholder {
+    color: var(--gray);
+}
+
+.textAreaContainer > textarea:not(:disabled):focus {
+    outline: none;
+    border: 1px solid var(--gray);
+}
+
+.textAreaContainer.error > textarea:not(:disabled) {
+    border: 1px solid var(--error);
+}
+
+.textAreaContainer > textarea:disabled {
+    color: var(--gray);
+    background-color: var(--background-secondary);
+    cursor: not-allowed;
+    border: 1px solid transparent;
+}

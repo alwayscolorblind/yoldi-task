@@ -1,0 +1,51 @@
+.avatar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-secondary);
+    color: var(--txt-color);
+    border: 1px solid var(--strokes-secondady);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.big {
+    width: 100px;
+    height: 100px;
+}
+
+.small {
+    width: 50px;
+    height: 50px;
+}
+
+.avatar.big p {
+    font-size: 36px;
+}
+
+.avatar.small p {
+    font-size: var(--subtitle);
+    line-height: 140%;
+}
+
+.avatar:hover > .uploader {
+    visibility: visible;
+}
+
+.uploader {
+    position: absolute;
+    visibility: hidden;
+    background-color: var(--txt-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.uploaderIcon {
+    color: var(--background-primary);
+    font-size: 50px;
+}

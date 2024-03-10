@@ -1,0 +1,28 @@
+{
+  "name": "test-task",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate:api": "npx rapini swr -p open-api.json -o src/api/swagger"
+  },
+  "dependencies": {
+    "axios": "1.6.7",
+    "next": "14.1.2",
+    "react": "18.3.0-canary-0066e0b68-20240306",
+    "react-dom": "18.3.0-canary-0066e0b68-20240306",
+    "react-line-awesome": "1.4.1",
+    "swr": "2.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "20",
+    "@types/react": "18",
+    "@types/react-dom": "18",
+    "eslint": "8",
+    "eslint-config-next": "14.1.2",
+    "typescript": "5"
+  }
+}

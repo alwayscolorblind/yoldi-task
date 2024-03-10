@@ -1,0 +1,39 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.title {
+    font-size: var(--title);
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 5px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.icon {
+    font-size: var(--icon-size);
+}
+
+.eye {
+    color: var(--gray);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .formContainer {
+        padding: 0 0;
+    }
+}

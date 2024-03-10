@@ -1,0 +1,21 @@
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-primary);
+    padding: 50px 20px;
+}
+
+.container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title {
+    color: var(--txt-color);
+    font-size: var(--title);
+    line-height: 140%;
+    font-weight: 500;
+}

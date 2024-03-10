@@ -1,0 +1,99 @@
+.inputContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.label {
+    font-size: var(--button-text);
+    line-height: 140%;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.inputInner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.additional {
+    font-size: var(--paragraph);
+    line-height: 160%;
+    padding: 12px 20px 12px 20px;
+    color: var(--gray);
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    background-color: var(--background-secondary);
+    border-bottom: 1px solid var(--strokes-primary);
+    border-top: 1px solid var(--strokes-primary);
+    border-left: 1px solid var(--strokes-primary);
+}
+
+.input {
+    position: relative;
+    flex: 1;
+}
+
+.input > input {
+    width: 100%;
+    font-size: var(--paragraph);
+    line-height: 160%;
+    padding: 12px 20px 12px 20px;
+    border: 1px solid var(--strokes-primary);
+    border-radius: var(--border-radius);
+    color: var(--txt-color);
+    background-color: var(--background-primary);
+    font-family: inherit;
+}
+
+.input.withLeft > input {
+    padding-left: calc(var(--icon-size) + 20px + 10px);
+}
+
+.input.withRight > input {
+    padding-right: calc(var(--icon-size) + 20px + 10px);
+}
+
+.input.withAdditional > input {
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.input > input::placeholder {
+    color: var(--gray);
+}
+
+.input > input:not(:disabled):focus {
+    outline: none;
+    border: 1px solid var(--gray);
+}
+
+.input.error > input:not(:disabled) {
+    border: 1px solid var(--error);
+}
+
+.input > input:disabled {
+    color: var(--gray);
+    background-color: var(--background-secondary);
+    cursor: not-allowed;
+    border: 1px solid transparent;
+}
+
+.icon {
+    position: absolute;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftIcon {
+    left: 20px;
+}
+
+.rightIcon {
+    right: 20px;
+}
